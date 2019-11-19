@@ -1,0 +1,162 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link href="CSS/format.css" rel="stylesheet" type="text/css">
+    <title>
+      InterfaceIF_SERIALIZABLE_OBJECT
+    </title>
+    <style type="text/css">
+    ul.c1 {list-style-type:disc;}
+    </style>
+  </head>
+  <body lang="en">
+    <div id="header">
+      <a accesskey="0" name="top" id="top"></a>
+      <table>
+        <tr>
+          <td>
+            <img id="logo" src="./img/ABAPlogo.gif">
+          </td>
+          <td>
+            <h1>
+              <span class="type">Interface</span> <span class="name">IF_SERIALIZABLE_OBJECT</span> <span class="shorttext">Serializable Object</span>
+            </h1>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div id="navbar">
+      <a href="AbapDoc.html">Main</a> <a href="Package_SABP_CORE.html">Package</a>
+    </div>
+    <div id="content">
+      <div id="class">
+        <table summary="This table contains main information about the object.">
+          <tr>
+            <td class="label">
+              Documentation
+            </td>
+            <td>
+              <div id="documentation">
+                <h1>
+                  Meaning
+                </h1>
+                <p class="">
+                  Durch Implementieren dieses Tag-Interfaces wird eine Klasse (und ihre Unterklassen) als serialisierbar gekennzeichnet. Das bedeutet, dass Instanzen dieser Klasse mit dem ABAP Befehl CALL TRANSFORMATION nach XML oder JSON serialisiert und von XML oder JSON deserialisiert werden können.
+                </p>
+                <p class="">
+                  Das Implementieren dieses Interfaces erzwingt keine Methoden- oder Attributdefinitionen.
+                </p>
+                <p class="">
+                  Klassendesigner sollten sich bewußt sein, daß bei der Default-Serialisierung von Objekten auch private Attribute in das XML- oder JSON-Dokument abgelegt werden, sie die Serialisierung also gegebenenfalls abändern sollten.
+                </p>
+                <p class="">
+                  Bei den meisten Klassen ist es sinnvoll, diese als serialisierbar zu kennzeichnen.
+                </p>
+                <p class="">
+                  Das Interface darf nur in einer Klasse eines Pfads des Vererbungsbaums implementiert werden und wirkt ab dieser Klasse für alle Unterklassen.
+                </p>
+                <h1>
+                  Use
+                </h1>
+                <p class="">
+                  Bei der Default-Serialisierung werden alle Instanz-Attribute serialisiert, die in serialisierbaren Klassen definiert sind; Interface-Attribute werden dann serialisiert, wenn die Klasse serialisierbar ist, die das entsprechende Interface das erste Mal (bezüglich der Klassenhierarchie) implementiert.
+                </p>
+                <p class="">
+                  Für Instanzen einer Klasse kann die Serialisierung derjenigen Attribute verändert werden, die in der Klasse definiert sind. Dazu werden zwei Methoden SERIALIZE_HELPER und DESERIALIZE_HELPER definiert, deren Parameter anstelle der Attribute bei der Serialisierung bzw. Deserialisierung verwendet werden.
+                </p>
+                <p class="">
+                  Die Attribute einer Klasse werden mit einer Versionsnummer serialisiert, die durch die optionale Klassenkonstante SERIALIZABLE_CLASS_VERSION bestimmt wird; wenn definiert, muss diese Konstante vom Typ I sein. Beim Deserialisieren wird überprüft, ob die serialisierte Versionsnummer mit der aktuellen übereinstimmt, andernfalls wird eine Ausnahme der Klasse CX_XSLT_DESERIALIZATION_ERROR ausgelöst.
+                </p>
+                <p class="">
+                  Folgende Bedingungen müssen erfüllt sein, sie werden vom Syntax-Check überprüft:
+                </p>
+                <ul class="c1">
+                  <li>Die Methoden SERIALIZE_HELPER und DESERIALIZE_HELPER müssen beide definiert oder beide nicht definiert sein. Wenn beide nicht definiert sind, wird die Default-Serialisierung verwendet.
+                  </li>
+                  <li>Beide Methoden müssen private Instanzmethoden sein.
+                  </li>
+                  <li>Die Methode SERIALIZE_HELPER darf nur EXPORTING-Parameter haben, die Methode DESERIALIZE_HELPER nur IMPORTING-Parameter.
+                  </li>
+                  <li>Für jeden Parameter in SERIALIZE_HELPER muss es einen Parameter gleichen Namens in DESERIALIZE_HELPER geben. Zusätzliche Parameter von DESERIALIZE_HELPER müssen optional sein.
+                  </li>
+                  <li>Die Methode SERIALIZE_HELPER darf keinen Parameter SERIALIZABLE_CLASS_VERSION haben. Die Methode DESERIALIZE_HELPER kann einen solchen Parameter haben, der vom Typ I sein muss, wenn definiert.
+                  </li>
+                </ul>
+                <p class="">
+                  Hat die Methode DESERIALIZE_HELPER einen optionalen Parameter SERIALIZABLE_CLASS_VERSION, wird der oben erwähnte Versionstest nicht vorgenommen.
+                </p>
+                <h1>
+                  Further Sources of Information
+                </h1>
+                <ul class="c1">
+                  <li>asXML - Instanzen von Klassen
+                  </li>
+                  <li>asJSON - Instanzen von Klassen
+                  </li>
+                </ul>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="label">
+              Properties
+            </td>
+            <td>
+              <div id="properties">
+                <table summary="This table contains major properties of the object.">
+                  <tr>
+                    <th>
+                      Property
+                    </th>
+                    <th>
+                      Value
+                    </th>
+                  </tr>
+                  <tr>
+                    <td class="label">
+                      package
+                    </td>
+                    <td>
+                      <a href="Package_SABP_CORE.html">SABP_CORE</a>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="label">
+              Subclasses
+            </td>
+            <td>
+              <div id="subclasses">
+                <a name="subclasses" id="subclasses"><em>Subclasses</em></a>
+                <ul>
+                  <li>
+                    <span class="name"><a href="Interface_IF_SERIALIZABLE_OBJECT.html">CX_ROOT</a></span>
+                  </li>
+                </ul>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="label">
+              UML diagram
+            </td>
+            <td>
+              <img alt="UML Class Diagram IF_SERIALIZABLE_OBJECT" id="UML" src="./img/Interface_IF_SERIALIZABLE_OBJECT.png">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div id="attribute"></div>
+      <div id="method"></div>
+      <div id="event"></div>
+    </div>
+    <div id="footer">
+      <p>
+        <span>UML documentation generated by the AbapDoc Plug-In of UML Class Diagram Generator from</span> <a href="http://www.sap.com"><span>SAP.</span></a> <span><img id="SAPlogo" src="./img/SAPlogo.gif"></span>
+      </p>
+    </div>
+  </body>
+</html>
