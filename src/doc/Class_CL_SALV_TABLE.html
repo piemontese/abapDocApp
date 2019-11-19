@@ -1,0 +1,246 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link href="CSS/format.css" rel="stylesheet" type="text/css">
+    <title>
+      ClassCL_SALV_TABLE
+    </title>
+    <style type="text/css">
+    span.c4 {text-decoration: underline}
+    ul.c3 {list-style-type:circle;}
+    li.c2 {list-style: none; display: inline}
+    ul.c1 {list-style-type:disc;}
+    </style>
+  </head>
+  <body lang="en">
+    <div id="header">
+      <a accesskey="0" name="top" id="top"></a>
+      <table>
+        <tr>
+          <td>
+            <img id="logo" src="./img/ABAPlogo.gif">
+          </td>
+          <td>
+            <h1>
+              <span class="type">Class</span> <span class="name">CL_SALV_TABLE</span> <span class="shorttext">Basis Class for Simple Tables</span>
+            </h1>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div id="navbar">
+      <a href="AbapDoc.html">Main</a> <a href="Package_SALV_OM_OBJECTS.html">Package</a>
+    </div>
+    <div id="content">
+      <div id="class">
+        <table summary="This table contains main information about the object.">
+          <tr>
+            <td class="label">
+              Documentation
+            </td>
+            <td>
+              <div id="documentation">
+                <h1>
+                  Functionality
+                </h1>
+                <p class="">
+                  Sie können mit dem ALV-Objektmodell Tabellen auf drei verschiedene Arten einsetzen:
+                </p>
+                <ul class="c1">
+                  <li>als einfache, zweidimensionale Tabelle Die folgenden Abschnitte befassen sich mit dieser Tabelle.
+                  </li>
+                  <li>als hierarchisch-sequenzielle Tabelle (Klasse CL_SALV_HIERSEQ_TABLE )&nbsp;
+                  </li>
+                  <li>als Baumstruktur (Klasse CL_SALV_TREE )&nbsp;
+                  </li>
+                </ul>
+                <p class="">
+                  Die Klasse CL_SALV_TABLE leitet sich von der Klasse CL_SALV_MODEL_LIST ab. Sie verwenden sie, um einfache Tabellen auszugeben. Für den Einfachstaufruf genügt es, gegen diese Klasse zu programmieren.
+                </p>
+                <p class="">
+                  <b>Darstellungsarten</b> Sie können die einfache ALV-Tabelle auf folgende Arten darstellen:
+                </p>
+                <ul class="c1">
+                  <li>als klassische ABAP-Liste Die Tabelle nimmt den gesamten Bildschirm ein. Somit können Sie nur eine Tabelle darstellen.
+                  </li>
+                  <li>als Tabellen-Control Hier stehen wiederum zwei Darstellungen zur Verfügung:
+                    <ul class="c3">
+                      <li>als Fullscreen-Tabelle Die Tabelle nimmt den gesamten Bildschirm ein. Somit können Sie nur eine Tabelle darstellen. Das Dynpro ist Teil von ALV.
+                      </li>
+                      <li>in einem SAP-GUI-Container Sie erzeugen einen Container der Klasse CL_GUI_CONTAINER in Ihrem Dynpro. In diesem Container wird die Tabelle dargestellt. Mit dieser Art der Darstellung können Sie z. B. mehr als eine Tabelle am Bildschirm anzeigen oder die Ausgabe mit anderen SAP Enjoy Controls mischen.
+                      </li>
+                      <li class="c2">
+                        <p class="">
+                          <b>Hinweis:</b> Diese beiden Darstellungen werden gelegentlich auch als <i>Ausprägung des Grid-Control</i> bezeichnet.
+                        </p>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+                <p class="">
+                  <b>Empfehlungen und Einschränkungen</b> Sie verwenden ALV in erster Linie dazu, strukturierte Daten am Bildschirm übersichtlich darzustellen und mit Hilfe spezifischer Funktionen sinnvoll nutzbar zu machen.
+                </p>
+                <p class="">
+                  Grundsätzlich gilt: Das Performance-Verhalten von ALV ist abhängig von verschiedenen Faktoren, insbesondere von der angezeigten Datenmenge und von der Anzahl der Aggregationsbedingungen (Zwischensummenbildung). Wenn Sie entscheiden müssen, ob und in welchem Rahmen Sie ALV einsetzen, prüfen Sie genau, ob die Rahmenbedingungen den Einsatz von ALV erlauben.
+                </p>
+                <p class="">
+                  Folgende Einschränkungen gelten für den Einsatz von ALV:
+                </p>
+                <ul class="c1">
+                  <li>Die <b>Anzahl der Spalten</b> ist auf 90 begrenzt.
+                  </li>
+                  <li>Die <b>Ausgabelänge</b> einer Spalte ist auf 128 Zeichen begrenzt.
+                  </li>
+                  <li>ALV ist so gestaltet, dass der Nutzer vor allem am Bildschirm mit Ihren Tabellen arbeitet. ALV stellt zwar einige Basisfunktionen für das Drucken Ihrer Tabelle zur Verfügung, für die Gestaltung <b>ausgefeilter Drucklayouts</b> jedoch ist ALV nicht vorgesehen.
+                  </li>
+                  <li>Bei <b>Sortierung und Zwischensummen</b> verwenden Sie insgesamt maximal neun Ebenen bzw. Spalten.
+                  </li>
+                  <li>Beachten Sie bei aggregierbaren Spalten, dass die <b>interne Länge</b> der Spalte nicht nur für die Einzelwerte, sondern auch <b>für das Ergebnis</b> ausreichend groß ist.
+                  </li>
+                  <li>Die Ausgabe ist spaltenorientiert. Sie können nur <b>flach strukturierte Tabellen</b> darstellen. Die Darstellung verschachtelter Tabellen ist nicht möglich.
+                  </li>
+                  <li>Mit ALV dargestellte Tabellen sind <b>nicht eingabebereit</b> .&nbsp;
+                  </li>
+                  <li>Wenn Sie die Tabelle als <b>Grid im Container</b> einsetzen, können Sie keinen <b>Batch-Modus</b> nutzen.
+                  </li>
+                  <li>Die <b>Ausgabe von Summen und Zwischensummen</b> wird allein von ALV behandelt. Sie können die Ergebnisse weder an Ihre Anwendung übergeben noch sie in irgendeiner Form manipulieren.
+                  </li>
+                </ul>
+                <p class="">
+                  <b>Methoden</b> Die Klasse CL_SALV_TABLE enthält folgende Methoden:
+                </p><span class="c4">Instanz erzeugen</span><br>
+                FACTORY Erzeugt eine Instanz des ALV-Tabellenobjekts. Hier legen Sie die Darstellungsart fest.<br>
+                <span class="c4">Tabelle darstellen</span><br>
+                DISPLAY Zeigt die ALV-Tabelle an<br>
+                <span class="c4">Anzeige der Tabelle beeinflussen</span><br>
+                GET_METADATA Nur Container-Darstellung: Stellt sicher, dass Metadaten die aktuellen Daten des Frontends sind<br>
+                GET_DISPLAY_SETTINGS Liefert das Objekt der Klasse CL_SALV_DISPLAY_SETTINGS zurück, mit dem Sie die Darstellung der Ausgabetabelle beeinflussen<br>
+                GET_COLUMNS Liefert das Objekt der Klasse CL_SALV_COLUMNS_LIST zurück, mit dem Sie die Einstellungen der Spalten festlegen<br>
+                GET_FILTERS Liefert das Objekt der Klasse CL_SALV_FILTERS zurück, mit dem Sie alle Filtereinstellungen vornehmen<br>
+                GET_SORTS Liefert das Objekt der Klasse CL_SALV_SORTS zurück, mit dem Sie alle Sortierungsinformationen einstellen<br>
+                GET_AGGREGATIONS Liefert das Objekt der Klasse CL_SALV_AGGREGATIONS zurück, mit dem Sie Aggregationseinstellungen bearbeiten<br>
+                GET_PRINT Liefert das Objekt der Klasse CL_SALV_PRINT zurück, mit dem Sie die Druckeinstellungen vornehmen<br>
+                <span class="c4">Einstellungen zur Interaktion</span><br>
+                GET_LAYOUT Liefert das Objekt der Klasse CL_SALV_LAYOUT zurück, mit dem Sie Einstellungen zur Layoutverwaltung vornehmen<br>
+                GET_EVENT Liefert das Objekt der Klasse CL_SALV_EVENT zurück, mit dem Sie die Ereignisse verwalten<br>
+                GET_FUNCTIONAL_SETTINGS Liefert das Objekt der Klasse CL_SALV_FUNCTIONAL_SETTINGS zurück, mit dem Sie vorwiegend das technische Umfeld Ihrer Ausgabetabelle verwalten<br>
+                GET_SELECTIONS Liefert das Objekt der Klasse CL_SALV_SELECTIONS zurück, mit dem Sie die Markierungen der Tabelle angeben<br>
+                REFRESH Frischt die Anzeige auf<br>
+                SET_DATA Legt eine neue interne Datentabelle fest<br>
+                <span class="c4">Toolbar</span><br>
+                GET_FUNCTIONS Liefert das Objekt der Klasse CL_SALV_FUNCTIONS_LIST zurück, mit dem sie die Funktionen Ihrer Ausgabetabelle festlegen<br>
+                GET_FUNCTIONS_BASE Nur interne Verwendung. Nicht verwenden<br>
+                <p class="">
+                  <span class="c4">Gestaltung von Kopf- und Fußinformationen</span> Die folgenden Methoden referenzieren jeweils ein Objekt der Klasse CL_SALV_FORM_ELEMENT ,&nbsp;mit dem Sie den Kopf- bzw. Fußbereich der Liste gestalten:
+                </p>GET_TOP_OF_LIST Liefert die Informationen zum Kopfbereich der Liste (online) zurück<br>
+                GET_END_OF_LIST Liefert die Informationen zum Fußbereich der Liste (online) zurück<br>
+                GET_TOP_OF_LIST_PRINT Liefert die Informationen zum Kopfbereich der Liste (im Ausdruck) zurück<br>
+                GET_END_OF_LIST_PRINT Liefert die Informationen zum Fußbereich der Liste (im Ausdruck) zurück<br>
+                SET_TOP_OF_LIST Setzt die Informationen zum Kopfbereich der Liste (online)<br>
+                SET_END_OF_LIST Setzt die Informationen zum Fußbereich der Liste (online)<br>
+                SET_TOP_OF_LIST_PRINT Setzt die Informationen zum Kopfbereich der Liste (im Ausdruck)<br>
+                SET_END_OF_LIST_PRINT Setzt die Informationen zum Fußbereich der Liste (im Ausdruck)<br>
+                SET_MODUS Wenn TOL &gt;65 Zeilen: Verarbeitung dennoch ermöglichen<br>
+                <span class="c4">Fenstereinstellungen</span><br>
+                GET_SCREEN_STATUS Liefert den Bildschirmstatus zurück<br>
+                GET_SCREEN_POPUP Liefert die Koordinaten des Dialogfensters zurück<br>
+                SET_SCREEN_STATUS Setzt den Bildschirmstatus<br>
+                SET_SCREEN_POPUP Setzt die Koordinaten des Dialogfensters<br>
+                CLOSE_SCREEN Schließt bei ABAP-Liste oder Fullscreen-Tabelle das Fenster<br>
+                <h1>
+                  Relations
+                </h1>
+                <p class="">
+                  Die Klasse CL_SALV_TABLE enthält die wichtigsten Metadatenobjekte, über die Sie z. B. Aussehen, Umfang, und Sortierung beeinflussen können. Darüber hinaus definieren Sie hier für die klassische ABAP-Liste und die Fullscreen-Tabelle die Bereiche oberhalb und unterhalb der Ausgabetabelle (TOP_OF_LIST, END_OF_LIST).
+                </p>
+                <p class=""></p>
+                <h1>
+                  Example
+                </h1>
+                <p class="">
+                  Das folgende Beispiel zeigt den einfachsten Aufruf einer Tabelle vom Typ SFLIGHT. Dabei ist die Tabelle <span style="font-family: monospace" class="sourcecode">gt_outtab</span> die Tabelle mit Ihren Anwendungsdaten und <span style="font-family: monospace" class="sourcecode">gr_table</span> die Referenz auf die zu verwendende ALV-Ausgabeklasse.
+                </p>
+                <p class="">
+                  <span style="font-family: monospace" class="sourcecode">data: gt_outtab type table of SFLIGHT.</span><br>
+                  <span style="font-family: monospace" class="sourcecode">data: gr_table type ref to cl_salv_table.</span><br>
+                  <span style="font-family: monospace" class="sourcecode">*... Select data</span><br>
+                  <span style="font-family: monospace" class="sourcecode">&nbsp;select * from SFLIGHT into corresponding fields of table gt_outtab.</span><br>
+                  <span style="font-family: monospace" class="sourcecode">*... Create Instance</span><br>
+                  <span style="font-family: monospace" class="sourcecode">&nbsp;call method cl_salv_table=&gt;factory</span><br>
+                  <span style="font-family: monospace" class="sourcecode">&nbsp;&nbsp;&nbsp;IMPORTING</span><br>
+                  <span style="font-family: monospace" class="sourcecode">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;R_SALV_TABLE = gr_table</span><br>
+                  <span style="font-family: monospace" class="sourcecode">&nbsp;&nbsp;&nbsp;changing</span><br>
+                  <span style="font-family: monospace" class="sourcecode">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;t_table = gt_outtab.</span>
+                </p><br>
+                <p class="">
+                  <span style="font-family: monospace" class="sourcecode">*... Display table</span><br>
+                  <span style="font-family: monospace" class="sourcecode">&nbsp;gr_table-&gt;display( ).</span>
+                </p><br>
+                <p class="">
+                  <b>Variante</b> Die Anzeige ist in diesem Beispiel auf <i>Fullscreen</i> eingestellt (Standardeinstellung). Um die Tabelle als klassische ABAP-Liste auszugeben, setzen Sie den Parameter LIST_DISPLAY der Methode FACTORY auf TRUE.
+                </p>
+                <h1>
+                  Hints
+                </h1>
+                <p class="">
+                  Das Programm SALV_DEMO_TABLE_SIMPLE enthält ein einfaches Beispiel, wie Sie die Klasse CL_SALV_TABLE einsetzen können.
+                </p>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="label">
+              Properties
+            </td>
+            <td>
+              <div id="properties">
+                <table summary="This table contains major properties of the object.">
+                  <tr>
+                    <th>
+                      Property
+                    </th>
+                    <th>
+                      Value
+                    </th>
+                  </tr>
+                  <tr>
+                    <td class="label">
+                      package
+                    </td>
+                    <td>
+                      <a href="Package_SALV_OM_OBJECTS.html">SALV_OM_OBJECTS</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="label">
+                      is final
+                    </td>
+                    <td>
+                      true
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="label">
+              UML diagram
+            </td>
+            <td>
+              <img alt="UML Class Diagram CL_SALV_TABLE" id="UML" src="./img/Class_CL_SALV_TABLE.png">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div id="attribute"></div>
+      <div id="method"></div>
+      <div id="event"></div>
+    </div>
+    <div id="footer">
+      <p>
+        <span>UML documentation generated by the AbapDoc Plug-In of UML Class Diagram Generator from</span> <a href="http://www.sap.com"><span>SAP.</span></a> <span><img id="SAPlogo" src="./img/SAPlogo.gif"></span>
+      </p>
+    </div>
+  </body>
+</html>

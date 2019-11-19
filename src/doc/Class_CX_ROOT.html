@@ -1,0 +1,1076 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link href="CSS/format.css" rel="stylesheet" type="text/css">
+    <title>
+      ClassCX_ROOT
+    </title>
+    <style type="text/css">
+    td.c3 {width=100%}
+    table.c2 {width=100%}
+    td.c1 {width=50%}
+    </style>
+  </head>
+  <body lang="en">
+    <div id="header">
+      <a accesskey="0" name="top" id="top"></a>
+      <table>
+        <tr>
+          <td>
+            <img id="logo" src="./img/ABAPlogo.gif">
+          </td>
+          <td>
+            <h1>
+              <span class="type">Class</span> <span class="name">CX_ROOT</span> <span class="shorttext">Abstract Superclass for All Global Exceptions</span>
+            </h1>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div id="navbar">
+      <a href="AbapDoc.html">Main</a> <a href="Package_S_ABAP_EXCEPTIONS.html">Package</a>
+    </div>
+    <div id="content">
+      <div id="class">
+        <table summary="This table contains main information about the object.">
+          <tr>
+            <td class="label">
+              Documentation
+            </td>
+            <td>
+              <div id="documentation">
+                <h1>
+                  Functionality
+                </h1>
+                <p class="">
+                  Siehe Klassenbasierte Ausnahmen
+                </p>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="label">
+              Properties
+            </td>
+            <td>
+              <div id="properties">
+                <table summary="This table contains major properties of the object.">
+                  <tr>
+                    <th>
+                      Property
+                    </th>
+                    <th>
+                      Value
+                    </th>
+                  </tr>
+                  <tr>
+                    <td class="label">
+                      package
+                    </td>
+                    <td>
+                      <a href="Package_S_ABAP_EXCEPTIONS.html">S_ABAP_EXCEPTIONS</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="label">
+                      is abstract
+                    </td>
+                    <td>
+                      true
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="label">
+                      is exception
+                    </td>
+                    <td>
+                      true
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="label">
+              Interfaces
+            </td>
+            <td>
+              <div id="implementations">
+                <a name="implementations" id="implementations"><em>Implemented interfaces</em></a>
+                <ul>
+                  <li>
+                    <span class="name"><a href="Interface_IF_MESSAGE.html">IF_MESSAGE</a></span>
+                  </li>
+                  <li>
+                    <span class="name"><a href="Interface_IF_SERIALIZABLE_OBJECT.html">IF_SERIALIZABLE_OBJECT</a></span>
+                  </li>
+                </ul>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="label">
+              Subclasses
+            </td>
+            <td>
+              <div id="subclasses">
+                <a name="subclasses" id="subclasses"><em>Subclasses</em></a>
+                <ul>
+                  <li>
+                    <span class="name"><a href="Class_CX_DYNAMIC_CHECK.html">CX_DYNAMIC_CHECK</a></span>
+                  </li>
+                </ul>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="label">
+              UML diagram
+            </td>
+            <td>
+              <img alt="UML Class Diagram CX_ROOT" id="UML" src="./img/Class_CX_ROOT.png">
+            </td>
+          </tr>
+          <tr>
+            <td class="label">
+              Attributes
+            </td>
+            <td class="c3">
+              <div id="matrix">
+                <table class="c2" summary="This table contains a matrix with links to member of the object.">
+                  <tr>
+                    <td class="c1">
+                      <a href="#CX_ROOT">CX_ROOT</a>
+                    </td>
+                    <td class="c1">
+                      <a href="#INTERNAL_SOURCE_POS">INTERNAL_SOURCE_POS</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="c1">
+                      <a href="#IS_RESUMABLE">IS_RESUMABLE</a>
+                    </td>
+                    <td class="c1">
+                      <a href="#KERNEL_ERRID">KERNEL_ERRID</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="c1">
+                      <a href="#PREVIOUS">PREVIOUS</a>
+                    </td>
+                    <td class="c1">
+                      <a href="#TEXTID">TEXTID</a>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="label">
+              Operations
+            </td>
+            <td class="c3">
+              <div id="matrix">
+                <table class="c2" summary="This table contains a matrix with links to member of the object.">
+                  <tr>
+                    <td class="c1">
+                      <a href="#CONSTRUCTOR">CONSTRUCTOR</a>
+                    </td>
+                    <td class="c1">
+                      <a href="#DESERIALIZE_HELPER">DESERIALIZE_HELPER</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="c1">
+                      <a href="#GET_SOURCE_POSITION">GET_SOURCE_POSITION</a>
+                    </td>
+                    <td class="c1">
+                      <a href="#SERIALIZE_HELPER">SERIALIZE_HELPER</a>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div id="attribute">
+        <a accesskey="a" name="CX_ROOT" id="CX_ROOT"></a>
+        <h2>
+          <a accesskey="a" name="CX_ROOT" id="CX_ROOT"><span>Attribute:</span> <span class="name">CX_ROOT</span> <span class="shorttext">Exception ID: Value for Attribute TEXTID</span></a>
+        </h2><a accesskey="a" name="CX_ROOT" id="CX_ROOT"></a>
+        <table summary="This table contains detailed information about the attribute.">
+          <tr>
+            <td class="label">
+              Properties
+            </td>
+            <td>
+              <div id="properties">
+                <table summary="This table contains major properties of the attribute.">
+                  <tr>
+                    <th>
+                      Property
+                    </th>
+                    <th>
+                      Value
+                    </th>
+                  </tr>
+                  <tr>
+                    <td class="label">
+                      type
+                    </td>
+                    <td>
+                      SOTR_CONC
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="label">
+                      visibility
+                    </td>
+                    <td>
+                      public
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="label">
+                      is static
+                    </td>
+                    <td>
+                      true
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="label">
+                      is constant
+                    </td>
+                    <td>
+                      true
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="label">
+                      default
+                    </td>
+                    <td>
+                      '16AA9A3937A9BB56E10000000A11447B'
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="label">
+              Documentation
+            </td>
+            <td>
+              <div id="documentation"></div>
+            </td>
+          </tr>
+        </table><a accesskey="a" name="INTERNAL_SOURCE_POS" id="INTERNAL_SOURCE_POS"></a>
+        <h2>
+          <a accesskey="a" name="INTERNAL_SOURCE_POS" id="INTERNAL_SOURCE_POS"><span>Attribute:</span> <span class="name">INTERNAL_SOURCE_POS</span> <span class="shorttext">Internal format for source code position</span></a>
+        </h2><a accesskey="a" name="INTERNAL_SOURCE_POS" id="INTERNAL_SOURCE_POS"></a>
+        <table summary="This table contains detailed information about the attribute.">
+          <tr>
+            <td class="label">
+              Properties
+            </td>
+            <td>
+              <div id="properties">
+                <table summary="This table contains major properties of the attribute.">
+                  <tr>
+                    <th>
+                      Property
+                    </th>
+                    <th>
+                      Value
+                    </th>
+                  </tr>
+                  <tr>
+                    <td class="label">
+                      type
+                    </td>
+                    <td>
+                      SCX_SRCPOS
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="label">
+                      visibility
+                    </td>
+                    <td>
+                      private
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="label">
+              Documentation
+            </td>
+            <td>
+              <div id="documentation"></div>
+            </td>
+          </tr>
+        </table><a accesskey="a" name="IS_RESUMABLE" id="IS_RESUMABLE"></a>
+        <h2>
+          <a accesskey="a" name="IS_RESUMABLE" id="IS_RESUMABLE"><span>Attribute:</span> <span class="name">IS_RESUMABLE</span> <span class="shorttext">Flag, Whether RESUME Can Be Used in the Exception Handler</span></a>
+        </h2><a accesskey="a" name="IS_RESUMABLE" id="IS_RESUMABLE"></a>
+        <table summary="This table contains detailed information about the attribute.">
+          <tr>
+            <td class="label">
+              Properties
+            </td>
+            <td>
+              <div id="properties">
+                <table summary="This table contains major properties of the attribute.">
+                  <tr>
+                    <th>
+                      Property
+                    </th>
+                    <th>
+                      Value
+                    </th>
+                  </tr>
+                  <tr>
+                    <td class="label">
+                      type
+                    </td>
+                    <td>
+                      ABAP_BOOL
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="label">
+                      visibility
+                    </td>
+                    <td>
+                      public
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="label">
+                      read only
+                    </td>
+                    <td>
+                      true
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="label">
+              Documentation
+            </td>
+            <td>
+              <div id="documentation"></div>
+            </td>
+          </tr>
+        </table><a accesskey="a" name="KERNEL_ERRID" id="KERNEL_ERRID"></a>
+        <h2>
+          <a accesskey="a" name="KERNEL_ERRID" id="KERNEL_ERRID"><span>Attribute:</span> <span class="name">KERNEL_ERRID</span> <span class="shorttext">Internal Name of Exception, if Triggered from Kernel</span></a>
+        </h2><a accesskey="a" name="KERNEL_ERRID" id="KERNEL_ERRID"></a>
+        <table summary="This table contains detailed information about the attribute.">
+          <tr>
+            <td class="label">
+              Properties
+            </td>
+            <td>
+              <div id="properties">
+                <table summary="This table contains major properties of the attribute.">
+                  <tr>
+                    <th>
+                      Property
+                    </th>
+                    <th>
+                      Value
+                    </th>
+                  </tr>
+                  <tr>
+                    <td class="label">
+                      type
+                    </td>
+                    <td>
+                      S380ERRID
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="label">
+                      visibility
+                    </td>
+                    <td>
+                      public
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="label">
+                      read only
+                    </td>
+                    <td>
+                      true
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="label">
+              Documentation
+            </td>
+            <td>
+              <div id="documentation"></div>
+            </td>
+          </tr>
+        </table><a accesskey="a" name="PREVIOUS" id="PREVIOUS"></a>
+        <h2>
+          <a accesskey="a" name="PREVIOUS" id="PREVIOUS"><span>Attribute:</span> <span class="name">PREVIOUS</span> <span class="shorttext">Exception Mapped to the Current Exception</span></a>
+        </h2><a accesskey="a" name="PREVIOUS" id="PREVIOUS"></a>
+        <table summary="This table contains detailed information about the attribute.">
+          <tr>
+            <td class="label">
+              Properties
+            </td>
+            <td>
+              <div id="properties">
+                <table summary="This table contains major properties of the attribute.">
+                  <tr>
+                    <th>
+                      Property
+                    </th>
+                    <th>
+                      Value
+                    </th>
+                  </tr>
+                  <tr>
+                    <td class="label">
+                      type
+                    </td>
+                    <td>
+                      CX_ROOT
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="label">
+                      visibility
+                    </td>
+                    <td>
+                      public
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="label">
+                      is association
+                    </td>
+                    <td>
+                      true
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="label">
+                      read only
+                    </td>
+                    <td>
+                      true
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="label">
+              Documentation
+            </td>
+            <td>
+              <div id="documentation"></div>
+            </td>
+          </tr>
+        </table><a accesskey="a" name="TEXTID" id="TEXTID"></a>
+        <h2>
+          <a accesskey="a" name="TEXTID" id="TEXTID"><span>Attribute:</span> <span class="name">TEXTID</span> <span class="shorttext">Key for Access to Message Text</span></a>
+        </h2><a accesskey="a" name="TEXTID" id="TEXTID"></a>
+        <table summary="This table contains detailed information about the attribute.">
+          <tr>
+            <td class="label">
+              Properties
+            </td>
+            <td>
+              <div id="properties">
+                <table summary="This table contains major properties of the attribute.">
+                  <tr>
+                    <th>
+                      Property
+                    </th>
+                    <th>
+                      Value
+                    </th>
+                  </tr>
+                  <tr>
+                    <td class="label">
+                      type
+                    </td>
+                    <td>
+                      SOTR_CONC
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="label">
+                      visibility
+                    </td>
+                    <td>
+                      public
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="label">
+                      read only
+                    </td>
+                    <td>
+                      true
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="label">
+              Documentation
+            </td>
+            <td>
+              <div id="documentation"></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div id="method">
+        <a accesskey="o" name="CONSTRUCTOR" id="CONSTRUCTOR"></a>
+        <h2>
+          <a accesskey="o" name="CONSTRUCTOR" id="CONSTRUCTOR"><span>Operation:</span> <span class="name">CONSTRUCTOR</span> <span class="shorttext">Constructor</span></a>
+        </h2><a accesskey="o" name="CONSTRUCTOR" id="CONSTRUCTOR"></a>
+        <table summary="This table contains detailed information about the method.">
+          <tr>
+            <td class="label">
+              Properties
+            </td>
+            <td>
+              <div id="properties">
+                <table summary="This table contains major properties of the method.">
+                  <tr>
+                    <th>
+                      Property
+                    </th>
+                    <th>
+                      Value
+                    </th>
+                  </tr>
+                  <tr>
+                    <td class="label">
+                      visibility
+                    </td>
+                    <td>
+                      public
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="label">
+              Parameter
+            </td>
+            <td>
+              <div id="parameters">
+                <table summary="This table contains all parameters of the method.">
+                  <tr>
+                    <th>
+                      name
+                    </th>
+                    <th>
+                      direction
+                    </th>
+                    <th>
+                      type
+                    </th>
+                    <th>
+                      default
+                    </th>
+                    <th>
+                      description
+                    </th>
+                  </tr>
+                  <tr>
+                    <td class="name">
+                      TEXTID
+                    </td>
+                    <td>
+                      in
+                    </td>
+                    <td class="type">
+                      SOTR_CONC
+                    </td>
+                    <td></td>
+                    <td class="shorttext"></td>
+                  </tr>
+                  <tr>
+                    <td class="name">
+                      PREVIOUS
+                    </td>
+                    <td>
+                      in
+                    </td>
+                    <td class="type">
+                      CX_ROOT
+                    </td>
+                    <td></td>
+                    <td class="shorttext"></td>
+                  </tr>
+                </table>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="label">
+              Documentation
+            </td>
+            <td>
+              <div id="documentation"></div>
+            </td>
+          </tr>
+        </table><a accesskey="o" name="DESERIALIZE_HELPER" id="DESERIALIZE_HELPER"></a>
+        <h2>
+          <a accesskey="o" name="DESERIALIZE_HELPER" id="DESERIALIZE_HELPER"><span>Operation:</span> <span class="name">DESERIALIZE_HELPER</span> <span class="shorttext">Prevents deserialization of INTERNAL_SOURCE_POS</span></a>
+        </h2><a accesskey="o" name="DESERIALIZE_HELPER" id="DESERIALIZE_HELPER"></a>
+        <table summary="This table contains detailed information about the method.">
+          <tr>
+            <td class="label">
+              Properties
+            </td>
+            <td>
+              <div id="properties">
+                <table summary="This table contains major properties of the method.">
+                  <tr>
+                    <th>
+                      Property
+                    </th>
+                    <th>
+                      Value
+                    </th>
+                  </tr>
+                  <tr>
+                    <td class="label">
+                      visibility
+                    </td>
+                    <td>
+                      private
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="label">
+              Parameter
+            </td>
+            <td>
+              <div id="parameters">
+                <table summary="This table contains all parameters of the method.">
+                  <tr>
+                    <th>
+                      name
+                    </th>
+                    <th>
+                      direction
+                    </th>
+                    <th>
+                      type
+                    </th>
+                    <th>
+                      default
+                    </th>
+                    <th>
+                      description
+                    </th>
+                  </tr>
+                  <tr>
+                    <td class="name">
+                      INTERNAL_SOURCE_POS
+                    </td>
+                    <td>
+                      in
+                    </td>
+                    <td class="type">
+                      SCX_SRCPOS
+                    </td>
+                    <td></td>
+                    <td class="shorttext">
+                      <p>
+                        (ignored)
+                      </p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="name">
+                      TEXTID
+                    </td>
+                    <td>
+                      in
+                    </td>
+                    <td class="type">
+                      SOTR_CONC
+                    </td>
+                    <td></td>
+                    <td class="shorttext">
+                      <p>
+                        Value for attribute TEXTID
+                      </p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="name">
+                      PREVIOUS
+                    </td>
+                    <td>
+                      in
+                    </td>
+                    <td class="type">
+                      CX_ROOT
+                    </td>
+                    <td></td>
+                    <td class="shorttext">
+                      <p>
+                        Value for attribute PREVIOUS
+                      </p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="name">
+                      KERNEL_ERRID
+                    </td>
+                    <td>
+                      in
+                    </td>
+                    <td class="type">
+                      S380ERRID
+                    </td>
+                    <td></td>
+                    <td class="shorttext">
+                      <p>
+                        Value for attribute KERNEL_ERRID
+                      </p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="name">
+                      IS_RESUMABLE
+                    </td>
+                    <td>
+                      in
+                    </td>
+                    <td class="type">
+                      ABAP_BOOL
+                    </td>
+                    <td></td>
+                    <td class="shorttext">
+                      <p>
+                        Value for attribute IS_RESUMABLE
+                      </p>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="label">
+              Documentation
+            </td>
+            <td>
+              <div id="documentation"></div>
+            </td>
+          </tr>
+        </table><a accesskey="o" name="GET_SOURCE_POSITION" id="GET_SOURCE_POSITION"></a>
+        <h2>
+          <a accesskey="o" name="GET_SOURCE_POSITION" id="GET_SOURCE_POSITION"><span>Operation:</span> <span class="name">GET_SOURCE_POSITION</span> <span class="shorttext">Gets position in source code</span></a>
+        </h2><a accesskey="o" name="GET_SOURCE_POSITION" id="GET_SOURCE_POSITION"></a>
+        <table summary="This table contains detailed information about the method.">
+          <tr>
+            <td class="label">
+              Properties
+            </td>
+            <td>
+              <div id="properties">
+                <table summary="This table contains major properties of the method.">
+                  <tr>
+                    <th>
+                      Property
+                    </th>
+                    <th>
+                      Value
+                    </th>
+                  </tr>
+                  <tr>
+                    <td class="label">
+                      visibility
+                    </td>
+                    <td>
+                      public
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="label">
+              Parameter
+            </td>
+            <td>
+              <div id="parameters">
+                <table summary="This table contains all parameters of the method.">
+                  <tr>
+                    <th>
+                      name
+                    </th>
+                    <th>
+                      direction
+                    </th>
+                    <th>
+                      type
+                    </th>
+                    <th>
+                      default
+                    </th>
+                    <th>
+                      description
+                    </th>
+                  </tr>
+                  <tr>
+                    <td class="name">
+                      PROGRAM_NAME
+                    </td>
+                    <td>
+                      out
+                    </td>
+                    <td class="type">
+                      SYREPID
+                    </td>
+                    <td></td>
+                    <td class="shorttext">
+                      <p>
+                        ABAP Program: Current Master Program
+                      </p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="name">
+                      INCLUDE_NAME
+                    </td>
+                    <td>
+                      out
+                    </td>
+                    <td class="type">
+                      SYREPID
+                    </td>
+                    <td></td>
+                    <td class="shorttext"></td>
+                  </tr>
+                  <tr>
+                    <td class="name">
+                      SOURCE_LINE
+                    </td>
+                    <td>
+                      out
+                    </td>
+                    <td class="type">
+                      I
+                    </td>
+                    <td></td>
+                    <td class="shorttext"></td>
+                  </tr>
+                </table>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="label">
+              Documentation
+            </td>
+            <td>
+              <div id="documentation"></div>
+            </td>
+          </tr>
+        </table><a accesskey="o" name="SERIALIZE_HELPER" id="SERIALIZE_HELPER"></a>
+        <h2>
+          <a accesskey="o" name="SERIALIZE_HELPER" id="SERIALIZE_HELPER"><span>Operation:</span> <span class="name">SERIALIZE_HELPER</span> <span class="shorttext">Needed for DESERIALIZE_HELPER</span></a>
+        </h2><a accesskey="o" name="SERIALIZE_HELPER" id="SERIALIZE_HELPER"></a>
+        <table summary="This table contains detailed information about the method.">
+          <tr>
+            <td class="label">
+              Properties
+            </td>
+            <td>
+              <div id="properties">
+                <table summary="This table contains major properties of the method.">
+                  <tr>
+                    <th>
+                      Property
+                    </th>
+                    <th>
+                      Value
+                    </th>
+                  </tr>
+                  <tr>
+                    <td class="label">
+                      visibility
+                    </td>
+                    <td>
+                      private
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="label">
+              Parameter
+            </td>
+            <td>
+              <div id="parameters">
+                <table summary="This table contains all parameters of the method.">
+                  <tr>
+                    <th>
+                      name
+                    </th>
+                    <th>
+                      direction
+                    </th>
+                    <th>
+                      type
+                    </th>
+                    <th>
+                      default
+                    </th>
+                    <th>
+                      description
+                    </th>
+                  </tr>
+                  <tr>
+                    <td class="name">
+                      INTERNAL_SOURCE_POS
+                    </td>
+                    <td>
+                      out
+                    </td>
+                    <td class="type">
+                      SCX_SRCPOS
+                    </td>
+                    <td></td>
+                    <td class="shorttext">
+                      <p>
+                        Value of attribute INTERNAL_SOURCE_POS
+                      </p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="name">
+                      TEXTID
+                    </td>
+                    <td>
+                      out
+                    </td>
+                    <td class="type">
+                      SOTR_CONC
+                    </td>
+                    <td></td>
+                    <td class="shorttext">
+                      <p>
+                        Value of attribute TEXTID
+                      </p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="name">
+                      PREVIOUS
+                    </td>
+                    <td>
+                      out
+                    </td>
+                    <td class="type">
+                      CX_ROOT
+                    </td>
+                    <td></td>
+                    <td class="shorttext">
+                      <p>
+                        Value of attribute PREVIOUS
+                      </p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="name">
+                      KERNEL_ERRID
+                    </td>
+                    <td>
+                      out
+                    </td>
+                    <td class="type">
+                      S380ERRID
+                    </td>
+                    <td></td>
+                    <td class="shorttext">
+                      <p>
+                        Value of attribute KERNEL_ERRID
+                      </p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="name">
+                      IS_RESUMABLE
+                    </td>
+                    <td>
+                      out
+                    </td>
+                    <td class="type">
+                      ABAP_BOOL
+                    </td>
+                    <td></td>
+                    <td class="shorttext">
+                      <p>
+                        Value of attribute IS_RESUMABLE
+                      </p>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="label">
+              Documentation
+            </td>
+            <td>
+              <div id="documentation"></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div id="event"></div>
+    </div>
+    <div id="footer">
+      <p>
+        <span>UML documentation generated by the AbapDoc Plug-In of UML Class Diagram Generator from</span> <a href="http://www.sap.com"><span>SAP.</span></a> <span><img id="SAPlogo" src="./img/SAPlogo.gif"></span>
+      </p>
+    </div>
+  </body>
+</html>

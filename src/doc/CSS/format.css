@@ -1,0 +1,67 @@
+html { margin:0; padding:0; }
+body { font-family:Arial; font-size:small; color:#000000; margin:0; padding:0  }
+a { text-decoration:none; color:#000; }
+a:hover { color:White; background:Black; }
+.logo{ position:absolute; left:0px; top:0px; z-index:-1; }
+.type { font-style:italic; }
+.name { font-weight:bolder; }
+.shorttext { font-size: small; }
+.label { text-align:right; font-style:italic; font-wight:lighter; font-size:smaller; }
+.sourcecode { font-family:monospace; font-size:larger; font-wight:bolder; color: #0000ff; }
+td.label { border-bottom-style:ridge; }
+#header { position: relative; top: 20px; left: 30px; }
+#header h1 { font-family: Arial; font-size: medium; color: #000; }
+#header .shorttext { }
+#header .name { }
+#header .type { }
+#content { margin: 0 1em 1em 1em; padding-top: 30px; }
+#content h2 { font-family: Arial; font-size: medium; color: #000; }
+#content table { width: 93%; table-layout: auto; border-style:ridge; border-bottom-style:none; border-width:thin; background-color: #F4F4F4; }
+#content td { border-bottom-style:ridge; border-left-style:ridge; border-width:thin; font-size:x-small; }
+#content td.label { width: 10%; border-left-style:none;}
+#footer { font-family: Arial; font-size: xx-small; margin: 0 0 1em 40px; }
+#footer a { text-decoration: none; color: #000; }
+#matrix { border-style:none; }
+#matrix table { width: 100%; table-layout: auto; border-style:none; }
+#matrix tr { }
+#matrix td { font-family: Arial; font-size:xx-small; border-style:none; }
+#matrix a { text-decoration: none; color: #000; }
+#matrix a:hover { color:White; background:Black; }
+#properties { }
+#properties table { border-style:none; }
+#properties td { border-style:none; font-size:xx-small; }
+#properties th { text-align:left; font-size:xx-small; text-decoration:underline; }
+#parameters { }
+#parameters table { border-style:none; }
+#parameters td { border-style:none; font-size:xx-small; }
+#parameters th { text-align:left; font-size:xx-small; text-decoration:underline; }
+#documentation { font-family: Arial; font-size:xx-small; margin: 0 0.3em 0 0; }
+#documentation h1 { font-family: Arial; font-size:xx-small; text-decoration:underline; margin-bottom: 0.5em; }
+#documentation h2 { font-family: Arial; font-size:xx-small; text-decoration:underline; margin-bottom: 0.5em; }
+#documentation h3 { font-family: Arial; font-size:xx-small; text-decoration:underline; margin-bottom: 0.5em; }
+#documentation p { font-family: Arial; font-size:xx-small; margin: 0 0.3em 0 0; }
+#documentation table { width: 93%; table-layout: auto; border-style:ridge; border-width:thin; }
+#documentation th { text-align:center; font-size:xx-small; text-decoration:underline; }
+#documentation td { border-bottom-style:ridge; border-left-style:ridge; border-width:thin; font-size:xx-small; }
+#navbar { font-family: Arial; font-size: xx-small; position: absolute; top: 0; right: 0; white-space:nowrap; background: #F0DFB4 }
+#navbar a { text-decoration: none; color: #000; border-bottom: 1px solid gray; padding: 0 1em 0 0;  }
+#navbar a:hover { color:White; background: #336; }
+#index { background-color: #F4F4F4; border: ridge thin; margin: 0 0 1em 0; }
+#index a { text-decoration: none; font-family: Arial; font-size: x-small }
+#index em { font-family: Arial; font-size: small; font-style:italic; text-decoration:underline; font-weight:bolder;}
+#index ul { list-style:none; margin: 1em; padding: 0; }
+#index .shorttext { font-family: Arial; font-size: x-small; font-style:italic; margin: 0 0 0 1em; }
+#implementations { }
+#implementations em { font-family: Arial; font-size: x-small; }
+#implementations ul { list-style:none; margin: 1em; padding: 0; }
+#implementations a { font-size:xx-small; }
+#subclasses { }
+#subclasses em { font-family: Arial; font-size: x-small; }
+#subclasses ul { list-style:none; margin: 1em; padding: 0; }
+#subclasses a { font-size:xx-small; }
+#dependencies { }
+#dependencies em { font-family: Arial; font-size: x-small; }
+#dependencies ul { list-style:none; margin: 1em; padding: 0; }
+#dependencies a { font-size:xx-small; }
+#UML { }
+#icon { height:auto; width:10px; }

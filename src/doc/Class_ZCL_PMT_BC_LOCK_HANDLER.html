@@ -1,0 +1,825 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link href="CSS/format.css" rel="stylesheet" type="text/css">
+    <title>
+      ClassZCL_PMT_BC_LOCK_HANDLER
+    </title>
+    <style type="text/css">
+    td.c3 {width=100%}
+    table.c2 {width=100%}
+    td.c1 {width=50%}
+    </style>
+  </head>
+  <body lang="en">
+    <div id="header">
+      <a accesskey="0" name="top" id="top"></a>
+      <table>
+        <tr>
+          <td>
+            <img id="logo" src="./img/ABAPlogo.gif">
+          </td>
+          <td>
+            <h1>
+              <span class="type">Class</span> <span class="name">ZCL_PMT_BC_LOCK_HANDLER</span> <span class="shorttext">Gestore lock</span>
+            </h1>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div id="navbar">
+      <a href="AbapDoc.html">Main</a> <a href="Package_Z_PMT_BC.html">Package</a>
+    </div>
+    <div id="content">
+      <div id="class">
+        <table summary="This table contains main information about the object.">
+          <tr>
+            <td class="label">
+              Documentation
+            </td>
+            <td>
+              <div id="documentation"></div>
+            </td>
+          </tr>
+          <tr>
+            <td class="label">
+              Properties
+            </td>
+            <td>
+              <div id="properties">
+                <table summary="This table contains major properties of the object.">
+                  <tr>
+                    <th>
+                      Property
+                    </th>
+                    <th>
+                      Value
+                    </th>
+                  </tr>
+                  <tr>
+                    <td class="label">
+                      package
+                    </td>
+                    <td>
+                      <a href="Package_Z_PMT_BC.html">Z_PMT_BC</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="label">
+                      is final
+                    </td>
+                    <td>
+                      true
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="label">
+              UML diagram
+            </td>
+            <td>
+              <img alt="UML Class Diagram ZCL_PMT_BC_LOCK_HANDLER" id="UML" src="./img/Class_ZCL_PMT_BC_LOCK_HANDLER.png">
+            </td>
+          </tr>
+          <tr>
+            <td class="label">
+              Attributes
+            </td>
+            <td class="c3">
+              <div id="matrix">
+                <table class="c2" summary="This table contains a matrix with links to member of the object.">
+                  <tr>
+                    <td class="c1">
+                      <a href="#GV_CLIENT">GV_CLIENT</a>
+                    </td>
+                    <td class="c1">
+                      <a href="#GV_ENQNAME">GV_ENQNAME</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="c1">
+                      <a href="#GV_GARG">GV_GARG</a>
+                    </td>
+                    <td class="c1">
+                      <a href="#GV_GNAME">GV_GNAME</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="c1">
+                      <a href="#GV_GUNAME">GV_GUNAME</a>
+                    </td>
+                    <td class="c1">
+                      <a href="#GV_TIME">GV_TIME</a>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="label">
+              Operations
+            </td>
+            <td class="c3">
+              <div id="matrix">
+                <table class="c2" summary="This table contains a matrix with links to member of the object.">
+                  <tr>
+                    <td class="c1">
+                      <a href="#CONSTRUCTOR">CONSTRUCTOR</a>
+                    </td>
+                    <td class="c1">
+                      <a href="#GET_LOCK">GET_LOCK</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="c1">
+                      <a href="#SET_LOCK">SET_LOCK</a>
+                    </td>
+                    <td class="c1">
+                      <a href="#WAIT_LOCK">WAIT_LOCK</a>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div id="attribute">
+        <a accesskey="a" name="GV_CLIENT" id="GV_CLIENT"></a>
+        <h2>
+          <a accesskey="a" name="GV_CLIENT" id="GV_CLIENT"><span>Attribute:</span> <span class="name">GV_CLIENT</span> <span class="shorttext">Identificatore mandante dell'utente attuale</span></a>
+        </h2><a accesskey="a" name="GV_CLIENT" id="GV_CLIENT"></a>
+        <table summary="This table contains detailed information about the attribute.">
+          <tr>
+            <td class="label">
+              Properties
+            </td>
+            <td>
+              <div id="properties">
+                <table summary="This table contains major properties of the attribute.">
+                  <tr>
+                    <th>
+                      Property
+                    </th>
+                    <th>
+                      Value
+                    </th>
+                  </tr>
+                  <tr>
+                    <td class="label">
+                      type
+                    </td>
+                    <td>
+                      SYST_MANDT
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="label">
+                      visibility
+                    </td>
+                    <td>
+                      private
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="label">
+              Documentation
+            </td>
+            <td>
+              <div id="documentation"></div>
+            </td>
+          </tr>
+        </table><a accesskey="a" name="GV_ENQNAME" id="GV_ENQNAME"></a>
+        <h2>
+          <a accesskey="a" name="GV_ENQNAME" id="GV_ENQNAME"><span>Attribute:</span> <span class="name">GV_ENQNAME</span> <span class="shorttext">Oggetto di blocco</span></a>
+        </h2><a accesskey="a" name="GV_ENQNAME" id="GV_ENQNAME"></a>
+        <table summary="This table contains detailed information about the attribute.">
+          <tr>
+            <td class="label">
+              Properties
+            </td>
+            <td>
+              <div id="properties">
+                <table summary="This table contains major properties of the attribute.">
+                  <tr>
+                    <th>
+                      Property
+                    </th>
+                    <th>
+                      Value
+                    </th>
+                  </tr>
+                  <tr>
+                    <td class="label">
+                      type
+                    </td>
+                    <td>
+                      STRING
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="label">
+                      visibility
+                    </td>
+                    <td>
+                      private
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="label">
+              Documentation
+            </td>
+            <td>
+              <div id="documentation"></div>
+            </td>
+          </tr>
+        </table><a accesskey="a" name="GV_GARG" id="GV_GARG"></a>
+        <h2>
+          <a accesskey="a" name="GV_GARG" id="GV_GARG"><span>Attribute:</span> <span class="name">GV_GARG</span> </a>
+        </h2><a accesskey="a" name="GV_GARG" id="GV_GARG"></a>
+        <table summary="This table contains detailed information about the attribute.">
+          <tr>
+            <td class="label">
+              Properties
+            </td>
+            <td>
+              <div id="properties">
+                <table summary="This table contains major properties of the attribute.">
+                  <tr>
+                    <th>
+                      Property
+                    </th>
+                    <th>
+                      Value
+                    </th>
+                  </tr>
+                  <tr>
+                    <td class="label">
+                      type
+                    </td>
+                    <td>
+                      STRING
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="label">
+                      visibility
+                    </td>
+                    <td>
+                      private
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="label">
+              Documentation
+            </td>
+            <td>
+              <div id="documentation"></div>
+            </td>
+          </tr>
+        </table><a accesskey="a" name="GV_GNAME" id="GV_GNAME"></a>
+        <h2>
+          <a accesskey="a" name="GV_GNAME" id="GV_GNAME"><span>Attribute:</span> <span class="name">GV_GNAME</span> </a>
+        </h2><a accesskey="a" name="GV_GNAME" id="GV_GNAME"></a>
+        <table summary="This table contains detailed information about the attribute.">
+          <tr>
+            <td class="label">
+              Properties
+            </td>
+            <td>
+              <div id="properties">
+                <table summary="This table contains major properties of the attribute.">
+                  <tr>
+                    <th>
+                      Property
+                    </th>
+                    <th>
+                      Value
+                    </th>
+                  </tr>
+                  <tr>
+                    <td class="label">
+                      type
+                    </td>
+                    <td>
+                      STRING
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="label">
+                      visibility
+                    </td>
+                    <td>
+                      private
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="label">
+              Documentation
+            </td>
+            <td>
+              <div id="documentation"></div>
+            </td>
+          </tr>
+        </table><a accesskey="a" name="GV_GUNAME" id="GV_GUNAME"></a>
+        <h2>
+          <a accesskey="a" name="GV_GUNAME" id="GV_GUNAME"><span>Attribute:</span> <span class="name">GV_GUNAME</span> <span class="shorttext">Nome utente</span></a>
+        </h2><a accesskey="a" name="GV_GUNAME" id="GV_GUNAME"></a>
+        <table summary="This table contains detailed information about the attribute.">
+          <tr>
+            <td class="label">
+              Properties
+            </td>
+            <td>
+              <div id="properties">
+                <table summary="This table contains major properties of the attribute.">
+                  <tr>
+                    <th>
+                      Property
+                    </th>
+                    <th>
+                      Value
+                    </th>
+                  </tr>
+                  <tr>
+                    <td class="label">
+                      type
+                    </td>
+                    <td>
+                      SYST_UNAME
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="label">
+                      visibility
+                    </td>
+                    <td>
+                      private
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="label">
+              Documentation
+            </td>
+            <td>
+              <div id="documentation"></div>
+            </td>
+          </tr>
+        </table><a accesskey="a" name="GV_TIME" id="GV_TIME"></a>
+        <h2>
+          <a accesskey="a" name="GV_TIME" id="GV_TIME"><span>Attribute:</span> <span class="name">GV_TIME</span> </a>
+        </h2><a accesskey="a" name="GV_TIME" id="GV_TIME"></a>
+        <table summary="This table contains detailed information about the attribute.">
+          <tr>
+            <td class="label">
+              Properties
+            </td>
+            <td>
+              <div id="properties">
+                <table summary="This table contains major properties of the attribute.">
+                  <tr>
+                    <th>
+                      Property
+                    </th>
+                    <th>
+                      Value
+                    </th>
+                  </tr>
+                  <tr>
+                    <td class="label">
+                      type
+                    </td>
+                    <td>
+                      I
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="label">
+                      visibility
+                    </td>
+                    <td>
+                      private
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="label">
+              Documentation
+            </td>
+            <td>
+              <div id="documentation"></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div id="method">
+        <a accesskey="o" name="CONSTRUCTOR" id="CONSTRUCTOR"></a>
+        <h2>
+          <a accesskey="o" name="CONSTRUCTOR" id="CONSTRUCTOR"><span>Operation:</span> <span class="name">CONSTRUCTOR</span> </a>
+        </h2><a accesskey="o" name="CONSTRUCTOR" id="CONSTRUCTOR"></a>
+        <table summary="This table contains detailed information about the method.">
+          <tr>
+            <td class="label">
+              Properties
+            </td>
+            <td>
+              <div id="properties">
+                <table summary="This table contains major properties of the method.">
+                  <tr>
+                    <th>
+                      Property
+                    </th>
+                    <th>
+                      Value
+                    </th>
+                  </tr>
+                  <tr>
+                    <td class="label">
+                      visibility
+                    </td>
+                    <td>
+                      public
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="label">
+              Parameter
+            </td>
+            <td>
+              <div id="parameters">
+                <table summary="This table contains all parameters of the method.">
+                  <tr>
+                    <th>
+                      name
+                    </th>
+                    <th>
+                      direction
+                    </th>
+                    <th>
+                      type
+                    </th>
+                    <th>
+                      default
+                    </th>
+                    <th>
+                      description
+                    </th>
+                  </tr>
+                  <tr>
+                    <td class="name">
+                      IV_CLIENT
+                    </td>
+                    <td>
+                      in
+                    </td>
+                    <td class="type">
+                      SYST_MANDT
+                    </td>
+                    <td>
+                      SY-MANDT
+                    </td>
+                    <td class="shorttext">
+                      <p>
+                        Identificatore mandante dell'utente attuale
+                      </p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="name">
+                      IV_TIME
+                    </td>
+                    <td>
+                      in
+                    </td>
+                    <td class="type">
+                      I
+                    </td>
+                    <td>
+                      10
+                    </td>
+                    <td class="shorttext"></td>
+                  </tr>
+                  <tr>
+                    <td class="name">
+                      IV_GNAME
+                    </td>
+                    <td>
+                      in
+                    </td>
+                    <td class="type">
+                      STRING
+                    </td>
+                    <td></td>
+                    <td class="shorttext"></td>
+                  </tr>
+                  <tr>
+                    <td class="name">
+                      IV_GARG
+                    </td>
+                    <td>
+                      in
+                    </td>
+                    <td class="type">
+                      STRING
+                    </td>
+                    <td></td>
+                    <td class="shorttext"></td>
+                  </tr>
+                  <tr>
+                    <td class="name">
+                      IV_GUNAME
+                    </td>
+                    <td>
+                      in
+                    </td>
+                    <td class="type">
+                      SYST_UNAME
+                    </td>
+                    <td>
+                      SPACE
+                    </td>
+                    <td class="shorttext">
+                      <p>
+                        Nome utente
+                      </p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="name">
+                      IV_ENQNAME
+                    </td>
+                    <td>
+                      in
+                    </td>
+                    <td class="type">
+                      STRING
+                    </td>
+                    <td>
+                      SPACE
+                    </td>
+                    <td class="shorttext">
+                      <p>
+                        Oggetto di blocco
+                      </p>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="label">
+              Documentation
+            </td>
+            <td>
+              <div id="documentation"></div>
+            </td>
+          </tr>
+        </table><a accesskey="o" name="GET_LOCK" id="GET_LOCK"></a>
+        <h2>
+          <a accesskey="o" name="GET_LOCK" id="GET_LOCK"><span>Operation:</span> <span class="name">GET_LOCK</span> </a>
+        </h2><a accesskey="o" name="GET_LOCK" id="GET_LOCK"></a>
+        <table summary="This table contains detailed information about the method.">
+          <tr>
+            <td class="label">
+              Properties
+            </td>
+            <td>
+              <div id="properties">
+                <table summary="This table contains major properties of the method.">
+                  <tr>
+                    <th>
+                      Property
+                    </th>
+                    <th>
+                      Value
+                    </th>
+                  </tr>
+                  <tr>
+                    <td class="label">
+                      visibility
+                    </td>
+                    <td>
+                      public
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="label">
+              Parameter
+            </td>
+            <td>
+              <div id="parameters">
+                <table summary="This table contains all parameters of the method.">
+                  <tr>
+                    <th>
+                      name
+                    </th>
+                    <th>
+                      direction
+                    </th>
+                    <th>
+                      type
+                    </th>
+                    <th>
+                      default
+                    </th>
+                    <th>
+                      description
+                    </th>
+                  </tr>
+                  <tr>
+                    <td class="name">
+                      RS_ENQ
+                    </td>
+                    <td>
+                      return
+                    </td>
+                    <td class="type">
+                      SEQG3
+                    </td>
+                    <td></td>
+                    <td class="shorttext">
+                      <p>
+                        Campi interattivi per vis./canc. Enqueue SM12
+                      </p>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="label">
+              Documentation
+            </td>
+            <td>
+              <div id="documentation"></div>
+            </td>
+          </tr>
+        </table><a accesskey="o" name="SET_LOCK" id="SET_LOCK"></a>
+        <h2>
+          <a accesskey="o" name="SET_LOCK" id="SET_LOCK"><span>Operation:</span> <span class="name">SET_LOCK</span> </a>
+        </h2><a accesskey="o" name="SET_LOCK" id="SET_LOCK"></a>
+        <table summary="This table contains detailed information about the method.">
+          <tr>
+            <td class="label">
+              Properties
+            </td>
+            <td>
+              <div id="properties">
+                <table summary="This table contains major properties of the method.">
+                  <tr>
+                    <th>
+                      Property
+                    </th>
+                    <th>
+                      Value
+                    </th>
+                  </tr>
+                  <tr>
+                    <td class="label">
+                      visibility
+                    </td>
+                    <td>
+                      public
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="label">
+              Documentation
+            </td>
+            <td>
+              <div id="documentation"></div>
+            </td>
+          </tr>
+        </table><a accesskey="o" name="WAIT_LOCK" id="WAIT_LOCK"></a>
+        <h2>
+          <a accesskey="o" name="WAIT_LOCK" id="WAIT_LOCK"><span>Operation:</span> <span class="name">WAIT_LOCK</span> </a>
+        </h2><a accesskey="o" name="WAIT_LOCK" id="WAIT_LOCK"></a>
+        <table summary="This table contains detailed information about the method.">
+          <tr>
+            <td class="label">
+              Properties
+            </td>
+            <td>
+              <div id="properties">
+                <table summary="This table contains major properties of the method.">
+                  <tr>
+                    <th>
+                      Property
+                    </th>
+                    <th>
+                      Value
+                    </th>
+                  </tr>
+                  <tr>
+                    <td class="label">
+                      visibility
+                    </td>
+                    <td>
+                      public
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="label">
+              Parameter
+            </td>
+            <td>
+              <div id="parameters">
+                <table summary="This table contains all parameters of the method.">
+                  <tr>
+                    <th>
+                      name
+                    </th>
+                    <th>
+                      direction
+                    </th>
+                    <th>
+                      type
+                    </th>
+                    <th>
+                      default
+                    </th>
+                    <th>
+                      description
+                    </th>
+                  </tr>
+                  <tr>
+                    <td class="name">
+                      RV_RET
+                    </td>
+                    <td>
+                      return
+                    </td>
+                    <td class="type">
+                      I
+                    </td>
+                    <td></td>
+                    <td class="shorttext"></td>
+                  </tr>
+                </table>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="label">
+              Documentation
+            </td>
+            <td>
+              <div id="documentation"></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div id="event"></div>
+    </div>
+    <div id="footer">
+      <p>
+        <span>UML documentation generated by the AbapDoc Plug-In of UML Class Diagram Generator from</span> <a href="http://www.sap.com"><span>SAP.</span></a> <span><img id="SAPlogo" src="./img/SAPlogo.gif"></span>
+      </p>
+    </div>
+  </body>
+</html>

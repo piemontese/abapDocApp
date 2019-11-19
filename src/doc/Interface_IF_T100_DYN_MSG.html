@@ -1,0 +1,454 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link href="CSS/format.css" rel="stylesheet" type="text/css">
+    <title>
+      InterfaceIF_T100_DYN_MSG
+    </title>
+    <style type="text/css">
+    td.c3 {width=100%}
+    table.c2 {width=100%}
+    td.c1 {width=50%}
+    </style>
+  </head>
+  <body lang="en">
+    <div id="header">
+      <a accesskey="0" name="top" id="top"></a>
+      <table>
+        <tr>
+          <td>
+            <img id="logo" src="./img/ABAPlogo.gif">
+          </td>
+          <td>
+            <h1>
+              <span class="type">Interface</span> <span class="name">IF_T100_DYN_MSG</span> <span class="shorttext">Dynamic Access to T100 Texts (with Attributes)</span>
+            </h1>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div id="navbar">
+      <a href="AbapDoc.html">Main</a> <a href="Package_S_ABAP_EXCEPTIONS.html">Package</a>
+    </div>
+    <div id="content">
+      <div id="class">
+        <table summary="This table contains main information about the object.">
+          <tr>
+            <td class="label">
+              Documentation
+            </td>
+            <td>
+              <div id="documentation">
+                <h1>
+                  Meaning
+                </h1>
+                <p class="">
+                  Erweiterung des Interface IF_T100_MESSAGE um Attribute für den Nachrichtentyp und die Platzhalter der Nachricht.
+                </p>
+                <h1>
+                  Use
+                </h1>
+                <p class="">
+                  Das Interface IF_T100_DYN_MSG ist für Auslösen von klassenbasierten Ausnahmen mit dem Zusatz <span style="font-family: monospace" class="sourcecode">MESSAGE</span> der Anweisung <span style="font-family: monospace" class="sourcecode">RAISE EXCEPTION</span> vorgesehen. Die Eigenschaften der hinter <span style="font-family: monospace" class="sourcecode">MESSAGE</span> angegebenen Nachricht werden bei einer Ausnahmeklasse, die IF_T100_DYN_MSG einbindet, automatisch den zugehörigen Attributen zugewiesen.
+                </p>
+                <h1>
+                  Further Sources of Information
+                </h1>
+                <p class="">
+                  Siehe IF_T100_DYN_MSG .&nbsp;
+                </p>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="label">
+              Properties
+            </td>
+            <td>
+              <div id="properties">
+                <table summary="This table contains major properties of the object.">
+                  <tr>
+                    <th>
+                      Property
+                    </th>
+                    <th>
+                      Value
+                    </th>
+                  </tr>
+                  <tr>
+                    <td class="label">
+                      package
+                    </td>
+                    <td>
+                      <a href="Package_S_ABAP_EXCEPTIONS.html">S_ABAP_EXCEPTIONS</a>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="label">
+              Interfaces
+            </td>
+            <td>
+              <div id="implementations">
+                <a name="implementations" id="implementations"><em>Implemented interfaces</em></a>
+                <ul>
+                  <li>
+                    <span class="name"><a href="Interface_IF_T100_MESSAGE.html">IF_T100_MESSAGE</a></span>
+                  </li>
+                </ul>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="label">
+              Subclasses
+            </td>
+            <td>
+              <div id="subclasses">
+                <a name="subclasses" id="subclasses"><em>Subclasses</em></a>
+                <ul>
+                  <li>
+                    <span class="name"><a href="Interface_IF_T100_DYN_MSG.html">ZCX_PMT_BC_EXCEPTION</a></span>
+                  </li>
+                </ul>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="label">
+              UML diagram
+            </td>
+            <td>
+              <img alt="UML Class Diagram IF_T100_DYN_MSG" id="UML" src="./img/Interface_IF_T100_DYN_MSG.png">
+            </td>
+          </tr>
+          <tr>
+            <td class="label">
+              Attributes
+            </td>
+            <td class="c3">
+              <div id="matrix">
+                <table class="c2" summary="This table contains a matrix with links to member of the object.">
+                  <tr>
+                    <td class="c1">
+                      <a href="#MSGTY">MSGTY</a>
+                    </td>
+                    <td class="c1">
+                      <a href="#MSGV1">MSGV1</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="c1">
+                      <a href="#MSGV2">MSGV2</a>
+                    </td>
+                    <td class="c1">
+                      <a href="#MSGV3">MSGV3</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="c1">
+                      <a href="#MSGV4">MSGV4</a>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div id="attribute">
+        <a accesskey="a" name="MSGTY" id="MSGTY"></a>
+        <h2>
+          <a accesskey="a" name="MSGTY" id="MSGTY"><span>Attribute:</span> <span class="name">MSGTY</span> <span class="shorttext">Message Type</span></a>
+        </h2><a accesskey="a" name="MSGTY" id="MSGTY"></a>
+        <table summary="This table contains detailed information about the attribute.">
+          <tr>
+            <td class="label">
+              Properties
+            </td>
+            <td>
+              <div id="properties">
+                <table summary="This table contains major properties of the attribute.">
+                  <tr>
+                    <th>
+                      Property
+                    </th>
+                    <th>
+                      Value
+                    </th>
+                  </tr>
+                  <tr>
+                    <td class="label">
+                      type
+                    </td>
+                    <td>
+                      SYMSGTY
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="label">
+                      visibility
+                    </td>
+                    <td>
+                      public
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="label">
+                      is interface
+                    </td>
+                    <td>
+                      true
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="label">
+              Documentation
+            </td>
+            <td>
+              <div id="documentation"></div>
+            </td>
+          </tr>
+        </table><a accesskey="a" name="MSGV1" id="MSGV1"></a>
+        <h2>
+          <a accesskey="a" name="MSGV1" id="MSGV1"><span>Attribute:</span> <span class="name">MSGV1</span> <span class="shorttext">Message Variable 1</span></a>
+        </h2><a accesskey="a" name="MSGV1" id="MSGV1"></a>
+        <table summary="This table contains detailed information about the attribute.">
+          <tr>
+            <td class="label">
+              Properties
+            </td>
+            <td>
+              <div id="properties">
+                <table summary="This table contains major properties of the attribute.">
+                  <tr>
+                    <th>
+                      Property
+                    </th>
+                    <th>
+                      Value
+                    </th>
+                  </tr>
+                  <tr>
+                    <td class="label">
+                      type
+                    </td>
+                    <td>
+                      SYMSGV
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="label">
+                      visibility
+                    </td>
+                    <td>
+                      public
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="label">
+                      is interface
+                    </td>
+                    <td>
+                      true
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="label">
+              Documentation
+            </td>
+            <td>
+              <div id="documentation"></div>
+            </td>
+          </tr>
+        </table><a accesskey="a" name="MSGV2" id="MSGV2"></a>
+        <h2>
+          <a accesskey="a" name="MSGV2" id="MSGV2"><span>Attribute:</span> <span class="name">MSGV2</span> <span class="shorttext">Message Variable 2</span></a>
+        </h2><a accesskey="a" name="MSGV2" id="MSGV2"></a>
+        <table summary="This table contains detailed information about the attribute.">
+          <tr>
+            <td class="label">
+              Properties
+            </td>
+            <td>
+              <div id="properties">
+                <table summary="This table contains major properties of the attribute.">
+                  <tr>
+                    <th>
+                      Property
+                    </th>
+                    <th>
+                      Value
+                    </th>
+                  </tr>
+                  <tr>
+                    <td class="label">
+                      type
+                    </td>
+                    <td>
+                      SYMSGV
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="label">
+                      visibility
+                    </td>
+                    <td>
+                      public
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="label">
+                      is interface
+                    </td>
+                    <td>
+                      true
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="label">
+              Documentation
+            </td>
+            <td>
+              <div id="documentation"></div>
+            </td>
+          </tr>
+        </table><a accesskey="a" name="MSGV3" id="MSGV3"></a>
+        <h2>
+          <a accesskey="a" name="MSGV3" id="MSGV3"><span>Attribute:</span> <span class="name">MSGV3</span> <span class="shorttext">Message Variable 3</span></a>
+        </h2><a accesskey="a" name="MSGV3" id="MSGV3"></a>
+        <table summary="This table contains detailed information about the attribute.">
+          <tr>
+            <td class="label">
+              Properties
+            </td>
+            <td>
+              <div id="properties">
+                <table summary="This table contains major properties of the attribute.">
+                  <tr>
+                    <th>
+                      Property
+                    </th>
+                    <th>
+                      Value
+                    </th>
+                  </tr>
+                  <tr>
+                    <td class="label">
+                      type
+                    </td>
+                    <td>
+                      SYMSGV
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="label">
+                      visibility
+                    </td>
+                    <td>
+                      public
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="label">
+                      is interface
+                    </td>
+                    <td>
+                      true
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="label">
+              Documentation
+            </td>
+            <td>
+              <div id="documentation"></div>
+            </td>
+          </tr>
+        </table><a accesskey="a" name="MSGV4" id="MSGV4"></a>
+        <h2>
+          <a accesskey="a" name="MSGV4" id="MSGV4"><span>Attribute:</span> <span class="name">MSGV4</span> <span class="shorttext">Message Variable 4</span></a>
+        </h2><a accesskey="a" name="MSGV4" id="MSGV4"></a>
+        <table summary="This table contains detailed information about the attribute.">
+          <tr>
+            <td class="label">
+              Properties
+            </td>
+            <td>
+              <div id="properties">
+                <table summary="This table contains major properties of the attribute.">
+                  <tr>
+                    <th>
+                      Property
+                    </th>
+                    <th>
+                      Value
+                    </th>
+                  </tr>
+                  <tr>
+                    <td class="label">
+                      type
+                    </td>
+                    <td>
+                      SYMSGV
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="label">
+                      visibility
+                    </td>
+                    <td>
+                      public
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="label">
+                      is interface
+                    </td>
+                    <td>
+                      true
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="label">
+              Documentation
+            </td>
+            <td>
+              <div id="documentation"></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div id="method"></div>
+      <div id="event"></div>
+    </div>
+    <div id="footer">
+      <p>
+        <span>UML documentation generated by the AbapDoc Plug-In of UML Class Diagram Generator from</span> <a href="http://www.sap.com"><span>SAP.</span></a> <span><img id="SAPlogo" src="./img/SAPlogo.gif"></span>
+      </p>
+    </div>
+  </body>
+</html>
